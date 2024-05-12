@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,800;1,400;1,500&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,600&family=Protest+Riot&family=Protest+Strike&display=swap');
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* z-index: 10000000000000; */
+    background-color: rgb(27, 5, 197);
+}
+/* body{
+    background-color: red;
+} */
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -100;
+    opacity: 0.7;
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+#color{
+    background-color: lightblue;
+    border: 23px solid black;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 0px 0px;
+}
+
+#logo img{
+    height: 96px;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    width: 96px;
+    border-radius: 234px;
+    filter: invert(0%);
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    /* background: url('../law1.jpg') no-repeat center center/cover; */
+    background: url('back.jpg') no-repeat center center/cover;
+    /* background: url(); */
+    /* background-color: aqua; */
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: rgb(121, 175, 230);
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ /* background: url('../bg.jpg'); */
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* background: url('img_f/logo2.webp') no-repeat center center/cover; */
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    border: 2px solid red;
+    height: auto;
+    width: auto;
+}
+#contact-box{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+    /* background-color: antiquewhite; */
+}
+#contact-box form select{
+    width: 40%;
+    background-color:bisquWHITE;
+    padding: 20px 13px ;
+    margin: 2px 23px;
+    border-radius: 13px;
+    border: 2px solid black;
+    font-family: 'Bree Serif', serif;
+
+}
+#contact-box form select :hover{
+    /* width: 40%; */
+    background-color: rgb(186, 184, 138);
+    /* padding: 20px 13px ;
+    margin: 2px 23px;
+    border-radius: 13px; */
+}
+/* #contact-box form .btn{
+    width: 40%;
+    padding: 23px;
+    margin: 23px 32px;
+    background-color: antiquewhite;
+} */
+
+#contact-box label{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+   font-size: 1.8rem;
+   font-family: 'Bree Serif', serif;
+   /* background-color: antiquewhite; */
+   /* height: 23px; */
+   /* padding: 23px 23px;
+   margin: 23px 23px; */
+}
+
+
+footer{
+    background: rgb(21, 154, 149);
+    color:white;
+    padding: 30px 130px;
+    margin: 0px 0px;
+    /* display: flex;
+    flex-direction:column-reverse; */
+    text-align: left;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    /* margin: 0px; */
+    /* border: 2px solid red; */
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 6px;
+    border: 2px solid white;
+    background-color:rgb(146, 39, 39);
+    color: white;
+    margin: 17px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor:pointer;
+    border-radius: 23px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+.img{
+    top: 0;
+    left: 0;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:whitesmoke;
+}
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+select {
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 2px 4px 8px #c5c5c5;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+#lawyer-info {
+    display: none;
+}
+.white{
+    color: white;
+    font-size: 23px;
+}
